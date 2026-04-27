@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXO GOD MODE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="stars"></div>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<!-- Header -->
+<header class="header glass">
+  <div class="logo">NEXO</div>
+
+  <div class="search-area">
+    <input type="text" placeholder="Search creators, videos..." id="searchBox">
+  </div>
+
+  <div class="header-btns">
+    <button onclick="openLogin()">Login</button>
+    <button onclick="openProfile()">Profile</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-box glass">
+    <span class="tag">ULTIMATE GOD MODE EXPERIENCE</span>
+
+    <h1>The Future Is Nexo</h1>
+
+    <p>
+      Shorts • Long Videos • Audio • Comics • Premium Creators • Viral Trends
+    </p>
+
+    <div class="hero-actions">
+      <button onclick="scrollTrending()">Explore</button>
+      <button onclick="showUpload()">Upload</button>
+    </div>
+
+    <div class="stats">
+      <div>
+        <h3>5M+</h3>
+        <span>Users</span>
+      </div>
+
+      <div>
+        <h3>60M+</h3>
+        <span>Views</span>
+      </div>
+
+      <div>
+        <h3>120K+</h3>
+        <span>Creators</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+<h2>Elite Categories</h2>
+
+<div class="grid">
+
+<div class="card glass">
+<h3>Short Videos</h3>
+<p>Fast viral content</p>
+<button>Open</button>
+</div>
+
+<div class="card glass">
+<h3>Long Videos</h3>
+<p>Movies & Episodes</p>
+<button>Watch</button>
+</div>
+
+<div class="card glass">
+<h3>Audio Series</h3>
+<p>Immersive listening</p>
+<button>Play</button>
+</div>
+
+<div class="card glass">
+<h3>Comics</h3>
+<p>Read stories</p>
+<button>Read</button>
+</div>
+
+</div>
+</section>
+
+<!-- Trending -->
+<section class="section" id="trending">
+<h2>Trending Universe</h2>
+
+<div class="grid">
+
+<div class="media-card glass">
+<img src="https://picsum.photos/500/300?21">
+<h3>Dark Saga</h3>
+<p>95K Likes • 1.2M Views</p>
+<button onclick="likePost(this)">Like</button>
+</div>
+
+<div class="media-card glass">
+<img src="https://picsum.photos/500/300?22">
+<h3>Ultra Creator</h3>
+<p>70K Likes • 800K Views</p>
+<button onclick="likePost(this)">Like</button>
+</div>
+
+<div class="media-card glass">
+<img src="https://picsum.photos/500/300?23">
+<h3>Comic Verse</h3>
+<p>42K Likes • 600K Reads</p>
+<button onclick="likePost(this)">Like</button>
+</div>
+
+<div class="media-card glass">
+<img src="https://picsum.photos/500/300?24">
+<h3>Galaxy Film</h3>
+<p>120K Likes • 2M Views</p>
+<button onclick="likePost(this)">Like</button>
+</div>
+
+</div>
+</section>
+
+<!-- Login -->
+<section class="page hidden glass" id="loginPage">
+<h2>Login</h2>
+<p>Continue with Google</p>
+<button onclick="fakeLogin()">Sign in</button>
+</section>
+
+<!-- Profile -->
+<section class="page hidden glass" id="profilePage">
+<h2>Your God Profile</h2>
+
+<div class="profile-box">
+<div class="avatar">N</div>
+<h3>Nexo User</h3>
+<p>Followers: 54,200</p>
+<p>Watch Time: Private</p>
+<p>Rank: Diamond</p>
+</div>
+
+<button onclick="showUpload()">Upload Content</button>
+</section>
+
+<!-- Upload -->
+<section class="page hidden glass" id="uploadPage">
+<h2>Upload Premium Content</h2>
+
+<input type="text" placeholder="Enter title">
+
+<select>
+<option>Short Video</option>
+<option>Long Video</option>
+<option>Audio</option>
+<option>Comic</option>
+</select>
+
+<input type="file">
+
+<button onclick="uploadDone()">Upload Now</button>
+</section>
+
+<footer>
+<p>NEXO GOD MODE © 2026</p>
+</footer>
+
+<nav class="bottom-nav glass">
+<button onclick="goHome()">Home</button>
+<button onclick="scrollTrending()">Explore</button>
+<button onclick="showUpload()">Upload</button>
+<button onclick="openProfile()">Profile</button>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
