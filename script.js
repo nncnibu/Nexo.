@@ -1,3 +1,13 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCm6GQYI2Yyj-AFOya0LecAoC-zQ_wAC5Q",
+  authDomain: "nexo-web-8f9b4.firebaseapp.com",
+  projectId: "nexo-web-8f9b4",
+  storageBucket: "nexo-web-8f9b4.firebasestorage.app",
+  messagingSenderId: "1099155534916",
+  appId: "1:1099155534916:web:e8dd171b88f7edc359f811",
+  measurementId: "G-1PP4GELRFT"
+};
 function hidePages(){
 document.querySelectorAll(".page").forEach(page=>{
 page.classList.add("hidden");
