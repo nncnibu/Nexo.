@@ -8,8 +8,6 @@ const firebaseConfig = {
   appId: "1:1099155534916:web:e8dd171b88f7edc359f811",
   measurementId: "G-1PP4GELRFT"
 };
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 function hidePages(){
 document.querySelectorAll(".page").forEach(page=>{
 page.classList.add("hidden");
