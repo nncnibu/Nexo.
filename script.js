@@ -1,3 +1,5 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCm6GQYI2Yyj-AFOya0LecAoC-zQ_wAC5Q",
@@ -8,6 +10,9 @@ const firebaseConfig = {
   appId: "1:1099155534916:web:e8dd171b88f7edc359f811",
   measurementId: "G-1PP4GELRFT"
 };
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 function hidePages(){
 document.querySelectorAll(".page").forEach(page=>{
 page.classList.add("hidden");
@@ -21,8 +26,16 @@ window.scrollTo(0,0);
 }
 
 function fakeLogin(){
-alert("Google Login Connected Soon");
-openProfile();
+ signInWithPopup(auth, provider)
+   .then((result) => {
+      const user = result.user;
+      alert("Welcome " + user.displayName);
+      openProfile();
+   })
+   .catch((error) => {
+      alert("Login Failed");
+      console.log(error);
+   });
 }
 
 function openProfile(){
